@@ -1,7 +1,11 @@
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 
-export const Layout: React.FC = (children) => {
+type LayoutProps = {
+  children: JSX.Element;
+};
+
+export const Layout: React.FC<LayoutProps> = (children) => {
   return (
     <>
       <Navbar />
