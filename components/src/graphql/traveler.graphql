@@ -1,0 +1,8 @@
+
+query getTravelers {
+    travelers(
+        name,
+        image,
+        website
+    )
+}

@@ -1,7 +1,16 @@
+import "reflect-metadata";
 import { ApolloServer } from "apollo-server-micro";
 import type { NextApiRequest, NextApiResponse } from "next";
+import { buildSchema } from "type-graphql";
+import { TravelerResolver } from "../../components/src/schema/traveler.resolver";
 
-const server = new ApolloServer({});
+const schema = await buildSchema({
+  resolvers: [TravelerResolver],
+});
+
+const server = new ApolloServer({
+  schema,
+});
 
 export const config = {
   api: {
