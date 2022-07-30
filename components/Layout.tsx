@@ -5,7 +5,7 @@ type LayoutProps = {
   children: JSX.Element;
 };
 
-export const Layout: React.FC<LayoutProps> = (children) => {
+export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Navbar />
