@@ -3,11 +3,11 @@ import { ObjectType, Field, InputType } from "type-graphql";
 
 @InputType()
 export class UpdateTravelerInput {
-  @MinLength(10, { message: "Title must be at least 10 characters long" })
+  @MinLength(4, { message: "Name must be at least 10 4 long" })
   @Field(() => String, { nullable: true })
-  title: string;
+  name: string;
 
-  @MinLength(10, { message: "Content must be at least 10 characters long" })
+  @MinLength(4, { message: "Website must be at least 4 characters long" })
   @Field(() => String, { nullable: true })
   website: string;
 
@@ -20,12 +20,12 @@ export class UpdateTravelerInput {
 
 @InputType()
 export class TravelerInput {
-  @MinLength(10, { message: "name must be at least 10 characters long" })
+  @MinLength(4, { message: "name must be at least 4 characters long" })
   @Field(() => String)
   name: string;
 
-  @MinLength(10, {
-    message: "website name must be at least 10 characters long",
+  @MinLength(4, {
+    message: "website name must be at least 4 characters long",
   })
   @Field(() => String)
   website: string;
@@ -61,7 +61,7 @@ export class TravelerDataObj {
   category: string;
 
   @Field(() => String)
-  content: string;
+  website: string;
 
   @Field(() => String)
   image: string;
@@ -82,7 +82,7 @@ export class TravelerPopulatedData extends TravelerDataObj {
 @ObjectType()
 export class TravelerData extends TravelerDataObj {
   @Field(() => String)
-  user: string;
+  name: string;
 }
 
 @ObjectType()
