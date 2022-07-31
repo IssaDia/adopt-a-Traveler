@@ -1,34 +1,134 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🖥 Adopt a traveler
 
-## Getting Started
+A fullstack application which can manage travelers
 
-First, run the development server:
+# 📜 Summary
 
-```bash
-npm run dev
-# or
-yarn dev
+- [Goal](#goal)
+- [Methodology](#methodology)
+- [Build with](#-build-with)
+- [My code environment and utils](#-my-code-environment-and-utils)
+- [Why this choice](#why-this-choice)
+- [Technical watch](#technical-watch)
+- [Biggest challenges for this project](#biggest-challenges-for-this-project)
+- [Feedback](#feedback)
+
+- [How to run this app](#-how-to-run-this-app)
+- [Node Package Manager](#-node-package-manager)
+- [Install packages](#-install-packages)
+- [Run on Front End](#-run-on-front-end)
+- [Run on Back End](#-run-on-back-end)
+- [Run Tests](#-run-tests)
+- [To improve](#-to-improve)
+
+## Goal
+
+_Display a CRUD apllication
+
+## Methodology
+
+I chose to use a Github to manage my code with a Kanban [here](https://github.com/users/IssaDia/projects/6) to list and manage the different issues in order to complete this project.
+
+
+## 🏗 Built with
+
+- [NextJs](https://nextjs.org/)
+- [Apollo Client](https://www.apollographql.com/docs/react/)
+- [MongoDB](https://www.mongodb.com/cloud)
+- [TypeGraphQL](https://typegraphql.com/)
+- [Typescript](https://fr.vuejs.org/v2/guide/typescript.html)
+- [Styled components](https://styled-components.com/)
+- [GraphQL](https://graphql.org/) 
+- [Mongoose](https://mongoosejs.com/)
+
+## My code environment and utils
+
+- VsCode
+- MacOs
+- NPM
+- EsLint
+- Prettier
+- Postman
+
+## Why this choice?
+
+I chose the stack on par with what the company was suggesting.
+
+## Technical watch
+
+Articles :
+
+GraphQL CRUD API with Next.js, MongoDB, and TypeGraphQL : https://codevoweb.com/graphql-crud-api-nextjs-mongodb-typegraphql/
+
+Videos :
+
+NextJS + GraphQL Blueprint: Professional Grade Setup : https://www.youtube.com/watch?v=XzE-PzALyDc&t=1094s
+
+## Biggest challenges for this project
+
+- set the Api with Apollo, TypeGraphQl and NextJs
+
+## Feedback
+
+It was a really good challenge. Allowed me to improve my backend skills with GraphQl :
+
+- create an API with Apollo GraphQl
+- make API calls
+
+and practice NextJs again :
+
+- create a NextJs project
+- use a CSS library (styled components)
+- consuming data from api with Apollo Client
+
+## 👨🏽‍💻 How to run this app
+
+### 📦 Node Package Manager
+
+In order to install packages and run this application, you will need [Node Package Manager](https://docs.npmjs.com/) v6.14.15 or higher
+
+To check if your Node version is correct:
+
+```
+node --version
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Personally i used node v14.17.2
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### 📥 Install packages
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+To install all the node_modules packages:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+npm install or npm i
+```
+on both /frontend and /backend folders
 
-## Learn More
+### ♻️ Run on Front End
 
-To learn more about Next.js, take a look at the following resources:
+To run on Development mode:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+go to the root folder then :
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+npm run dev
+```
 
-## Deploy on Vercel
+then go to : http://localhost:3000/
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 🧪 Run Tests
+
+To run tests:
+
+```
+npm run test
+```
+
+
+## 📑 To improve
+
+- improve frontend interface
+- e2e Tests
+- implement tests Client/Server
+- add github actions to automate tests and deployment
